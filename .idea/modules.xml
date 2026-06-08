@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Razorpay.iml" filepath="$PROJECT_DIR$/.idea/Razorpay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/razorpay/razorpay.iml" filepath="$PROJECT_DIR$/razorpay/razorpay.iml" />
     </modules>
   </component>
 </project>
