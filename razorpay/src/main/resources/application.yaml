@@ -1,34 +1,33 @@
-#spring:
-#  application:
-#    name: razorpay
-#  datasource:
-##    url: ${DB_URL:jdbc:postgresql://localhost:5432/razorpayDB}
-#    url: ${DB_URL:jdbc:mysql://localhost:3306/razorpayDB}
-#    username: ${DB_USER:root}
-#    password: ${DB_PASS:Ajay@9977}
-#  jpa:
-#    hibernate:
-#      ddl-auto: create
-#    show-sql: true
-#    properties:
-#      hibernate:
-#        dialect: org.hibernate.dialect.PostgreSQLDialect
-
-
 spring:
   application:
     name: razorpay
-
   datasource:
-    url: jdbc:mysql://localhost:3306/razorpayDB
-    username: root
-    password: Ajay@9977
-    driver-class-name: com.mysql.cj.jdbc.Driver
-
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/razorpaydb}
+    username: ${DB_USER:postgres}
+    password: ${DB_PASS:Ajay@9977}
   jpa:
     hibernate:
       ddl-auto: create
     show-sql: true
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQLDialect
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+
+#spring:
+#  application:
+#    name: razorpay
+#
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/razorpayDB
+#    username: root
+#    password: Ajay@9977
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: create
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQLDialect
