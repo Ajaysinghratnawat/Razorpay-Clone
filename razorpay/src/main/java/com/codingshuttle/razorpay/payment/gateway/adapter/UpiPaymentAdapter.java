@@ -33,7 +33,7 @@ public class UpiPaymentAdapter implements PaymentAdapter {
 
             return switch (paymentProcessorResponse){
                 case PaymentProcessorResponse.Failure failure -> new PaymentResult.Failure(failure.errorCode(),failure.errorDescription());
-                case PaymentProcessorResponse.Pending pending -> new PaymentResult.Pending(pending.processRef());
+                case PaymentProcessorResponse.Pending pending -> new PaymentResult.Pending(pending.processorReference());
                 case PaymentProcessorResponse.Success success -> new PaymentResult.Success(success.bankReference());
             };
         }
